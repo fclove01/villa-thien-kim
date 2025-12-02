@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Thiên Kim - Nghỉ Dưỡng Tại Phan Rang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            DEFAULT: '#C6A868', 
+                            50: '#F9F6F0',
+                            100: '#F2EDDF',
+                            200: '#E5DBBD',
+                            300: '#D7C89A',
+                            400: '#C6A868', // Màu chính
+                            500: '#B49553', // Màu hover đậm hơn
+                            600: '#9D7F3F',
+                            700: '#816733',
+                            800: '#655028',
+                            900: '#4A3B1E',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .scroll-smooth { scroll-behavior: smooth; }
+        /* Hiệu ứng rung cho nút gọi */
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        .shake-btn { animation: shake 2.5s infinite; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 scroll-smooth antialiased  ">
+
+    <header class="relative h-[80vh] flex items-center justify-center bg-cover bg-center" 
+            style="background-image: url('pic/3.jpg');"
+            >
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight uppercase">Villa Thiên Kim</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light italic">Nghỉ dưỡng đẳng cấp ngay trung tâm thành phố</p>
+            <button class="js-toggle-popup bg-gold-400 hover:bg-gold-500 text-white font-bold py-4 px-8 rounded-full transition duration-300 text-lg uppercase tracking-wider transform hover:scale-105 inline-flex items-center shadow-lg">
+                <i class="fas fa-address-book mr-2"></i> Liên Hệ Đặt Phòng
+            </button>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white container mx-auto px-4 -mt-20 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 shadow-2xl rounded-lg overflow-hidden bg-white">
+            <div class="p-8 text-center border-b md:border-b-0 md:border-r border-gray-100 hover:bg-gray-50 transition">
+                <div class="text-gold-400 text-5xl mb-4"><i class="fas fa-swimming-pool"></i></div>
+                <h3 class="text-xl font-bold mb-2 uppercase">Hồ Bơi Riêng</h3>
+                <p class="text-gray-600">Thư giãn tuyệt đối với hồ bơi xanh mát, sạch sẽ ngay trong khuôn viên.</p>
+            </div>
+            <div class="p-8 text-center border-b md:border-b-0 md:border-r border-gray-100 hover:bg-gray-50 transition">
+                <div class="text-gold-400 text-5xl mb-4"><i class="fas fa-map-marker-alt"></i></div>
+                <h3 class="text-xl font-bold mb-2 uppercase">Ngay Trung Tâm</h3>
+                <p class="text-gray-600">Thuận tiện di chuyển, gần các điểm ăn uống và vui chơi giải trí.</p>
+            </div>
+            <div class="p-8 text-center hover:bg-gray-50 transition">
+                <div class="text-gold-400 text-5xl mb-4"><i class="fas fa-tag"></i></div>
+                <h3 class="text-xl font-bold mb-2 uppercase">Giá Tốt Nhất</h3>
+                <p class="text-gray-600">Cam kết giá ưu đãi nhất khi liên hệ đặt phòng trực tiếp.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 uppercase">Chào mừng đến với Thiên Kim</h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                Villa Thiên Kim mang đến không gian nghỉ dưỡng tiện nghi, hiện đại nhưng vô cùng ấm cúng. 
+                Là lựa chọn hoàn hảo cho gia đình hoặc nhóm bạn muốn tận hưởng kỳ nghỉ trọn vẹn tại thành phố biển.
+                Chúng tôi trang bị đầy đủ nội thất, bếp nấu, BBQ sân vườn để bạn có cảm giác như đang ở nhà.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-4 py-2 bg-white rounded-full shadow text-sm font-semibold text-gray-700"><i class="fas fa-wifi mr-2 text-green-500"></i>Wifi Tốc Độ Cao</span>
+                <span class="px-4 py-2 bg-white rounded-full shadow text-sm font-semibold text-gray-700"><i class="fas fa-snowflake mr-2 text-blue-500"></i>Máy Lạnh Full Phòng</span>
+                <span class="px-4 py-2 bg-white rounded-full shadow text-sm font-semibold text-gray-700"><i class="fas fa-utensils mr-2 text-orange-500"></i>Bếp Nấu Ăn</span>
+                <span class="px-4 py-2 bg-white rounded-full shadow text-sm font-semibold text-gray-700"><i class="fas fa-music mr-2 text-purple-500"></i>Loa Kéo Karaoke</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 uppercase">Hình Ảnh Thực Tế</h2>
+            <p class="text-center text-gray-500 mb-8 -mt-8 italic">(Bấm vào ảnh để xem phóng to)</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="allbum">
+               
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-6 uppercase border-l-4 border-gold-400 pl-4">Liên Hệ Đặt Phòng</h3>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-400"></i>
+                        <span>Số 34 Hoàng Dư Khương, Phường Phan Rang, Tỉnh Khánh Hoà</span>
+                    </li>
+                    <li class="flex items-center">
+                         <i class="fas fa-phone mt-1 mr-3 text-gold-400"></i>
+                        <a href="tel:0933069118" class="hover:text-gold-300 font-bold text-xl transition">093 306 91 18</a>
+                    </li>
+                    <li class="flex items-center">
+                         <i class="fas fa-envelope mt-1 mr-3 text-gold-400"></i>
+                        <span>villathienkim@gmail.com</span> </li>
+                </ul>
+                <div class="mt-8">
+                    <p class="text-sm text-gray-400 mb-2">Thông tin chuyển khoản (Cọc phòng):</p>
+                    <p class="font-mono bg-gray-800 p-3 rounded inline-block border border-gray-700 text-gold-100">
+                        Ngân hàng: ... <br> STK: ... <br> Chủ TK: ...
+                    </p>
+                </div>
+            </div>
+
+            <div class="h-64 md:h-auto rounded-lg overflow-hidden border-2 border-gray-700 shadow-xl">
+             
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.3390632085782!2d108.99708684107756!3d11.574916435079528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3170d100084d8b4f%3A0xe8533f8bb993b5a0!2sVilla%20An%20Nguy%C3%AAn%20Phan%20Rang!5e0!3m2!1svi!2s!4v1764684068041!5m2!1svi!2s" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-12 pt-8 border-t border-gray-800 text-sm">
+            © 2025 Villa Thiên Kim. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 z-40">
+        <button class="js-toggle-popup shake-btn bg-gold-400 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl border-4 border-white hover:bg-gold-500 transition cursor-pointer">
+            <i class="fas fa-phone-alt text-2xl"></i>
+        </button>
+    </div>
+
+    <div id="contactPopup" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none">
+        <div class="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6 relative transform scale-95 transition-transform duration-300" id="popupContent">
+            
+            <button class="js-toggle-popup absolute top-3 right-3 text-gray-400 hover:text-gray-600">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+
+            <h3 class="text-xl font-bold text-center mb-6 text-gray-800">Liên hệ Villa Thiên Kim</h3>
+
+            <div class="space-y-3">
+                <a href="tel:0933069118" class="flex items-center justify-between p-4 bg-green-50 rounded-lg hover:bg-green-100 transition border border-green-200 group">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center mr-3 group-hover:scale-110 transition">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-gray-800">Gọi trực tiếp</p>
+                            <p class="text-xs text-gray-500">093 306 91 18</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400 group-hover:text-green-500 transition"></i>
+                </a>
+
+                <a href="https://zalo.me/0933069118" target="_blank" class="flex items-center justify-between p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition border border-blue-200 group">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center mr-3 font-bold text-xs group-hover:scale-110 transition">
+                            Zalo
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-gray-800">Chat Zalo</p>
+                            <p class="text-xs text-gray-500">093 306 91 18</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400 group-hover:text-blue-500 transition"></i>
+                </a>
+
+                <a href="mailto:villathienkim.phanrang@gmail.com" class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition border border-gray-200 group">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-500 text-white flex items-center justify-center mr-3 group-hover:scale-110 transition">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-gray-800">Gửi Email</p>
+                            <p class="text-xs text-gray-500">Nhận báo giá</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400 group-hover:text-gray-600 transition"></i>
+                </a>
+            </div>
+            
+            <p class="text-center text-xs text-gray-400 mt-6">Chúng tôi thường phản hồi ngay lập tức</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+        const allbum_element = document.getElementById('allbum')
+        for (let index = 1; index < 11; index++) {
+            const src = `pic/${index}.jpg`
+            const a = document.createElement('a')
+            a.className = 'glightbox'
+            a.href = src
+            a.setAttribute('data-gallery', 'villa-gallery')
+            const img = document.createElement('img')
+            img.src = src
+            img.className = 'w-full h-64 object-cover rounded-lg shadow-md hover:opacity-90 transition cursor-pointer'
+            a.appendChild(img)
+            allbum_element.appendChild(a)
+
+        }
+
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true,
+            selector: '.glightbox' 
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const popup = document.getElementById('contactPopup');
+            const popupContent = document.getElementById('popupContent');
+            const toggleButtons = document.querySelectorAll('.js-toggle-popup');
+
+            function togglePopup() {
+                const isHidden = popup.classList.contains('hidden');
+                if (isHidden) {
+                    popup.classList.remove('hidden');
+                    setTimeout(() => {
+                        popup.classList.remove('opacity-0', 'pointer-events-none');
+                        popupContent.classList.remove('scale-95');
+                        popupContent.classList.add('scale-100');
+                    }, 10);
+                } else {
+                    popup.classList.add('opacity-0', 'pointer-events-none');
+                    popupContent.classList.remove('scale-100');
+                    popupContent.classList.add('scale-95');
+                    setTimeout(() => {
+                        popup.classList.add('hidden');
+                    }, 300); 
+                }
+            }
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', togglePopup);
+            });
+
+            popup.addEventListener('click', function(event) {
+                if (event.target === popup) {
+                    togglePopup();
+                }
+            });
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && !popup.classList.contains('hidden')) {
+                    togglePopup();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
